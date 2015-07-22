@@ -14,17 +14,29 @@
     <div class="row">
       <h1>CRUD Intro</h1>
 
+      <form id="create-form">
+        <h4>Create a post</h4>
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="text" placeholder="text">
+        <input type="text" name="user" placeholder="text">
+        <input type="submit">
+      </form>
+
+      <form id="search-form">
+        <h4>Search posts</h4>
+        <input type="text" name="user" placeholder="text">
+        <input type="submit">
+      </form>
+
       <form id="update-form">
-        <h1>Update a post</h1>
-        <h2 id="post-id"></h2>
+        <h4>Update a post</h4>
         <input type="text" name="postId" placeholder="Post ID">
         <input type="text" name="title" placeholder="title">
         <input type="text" name="text" placeholder="text">
         <input type="submit">
       </form>
 
-      <!-- <button id="new-post">SUBMIT</button> -->
-
+      <h2>All posts</h2>
       <table id="all-posts" class="table table-condensed">
         <thead>
           <tr>
@@ -32,6 +44,8 @@
             <th>Title</th>
             <th>Text</th>
             <th>User</th>
+            <th>Update</th>
+            <th>Cancel</th>
           </tr>
         </thead>
         <tbody>
